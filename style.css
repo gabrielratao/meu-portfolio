@@ -1,0 +1,78 @@
+*{
+    font-family: 'Ubuntu', sans-serif;
+    letter-spacing: 1px;
+}
+
+body {
+    background: linear-gradient(rgb(107, 6, 6), rgb(0, 0, 0));
+    
+    margin: 0;
+    
+    
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    height: 100vh;
+    width: 100vw;
+}
+
+header{
+    margin-top: 25px;
+    
+}
+
+.my-picture{
+    
+    width: 200px;
+    height: 200px;
+
+    border-radius: 100px;
+    
+}
+
+p{
+    color: white;
+    text-align: center;
+}
+
+.my-projects {
+    
+    margin-top: 10px;
+    
+    width: 50vh;
+    
+    
+}
+
+.item {
+    width: 50vh;
+    height: 8vh;
+    margin-bottom: 20px; 
+
+    color: black;
+    text-decoration: none;
+    border-radius: 50px;
+    background-color: white;
+
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+
+    transition: .35s;
+    cursor: pointer;
+    
+}
+
+.item:last-child{
+    margin-bottom: 0;
+}
+
+.my-projects:hover > :not(:hover) {
+    opacity: .4;
+    transform: scale(0.9);
+}
+
