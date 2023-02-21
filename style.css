@@ -4,7 +4,7 @@
 }
 
 body {
-    background: linear-gradient(rgb(107, 6, 6), rgb(0, 0, 0), rgb(0, 0, 0));
+    background: linear-gradient(rgb(107, 6, 6), #121214, #121214, #121214, #121214, #121214);
     
     margin: 0;
     
@@ -13,13 +13,13 @@ body {
     align-items: center;
     flex-direction: column;
 
-    height: 100vh;
-    width: 100vw;
+    height: 250vh;
+    
 }
 
 header{
     margin-top: 25px;
-
+    
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -39,7 +39,7 @@ header{
     
 }
 
-p{
+.my-info{
     color: white;
     text-align: center;
 }
@@ -146,4 +146,69 @@ p{
 img{
     width: 7vh;
     
+}
+
+
+
+
+
+#about-me{
+    margin-top: 30px;
+    letter-spacing: 1px;
+    color: #e1e1e6;
+
+
+    display: grid;
+    grid-template-areas: 
+    "who-am-i who-am-i"
+    "aside main";
+
+    grid-template-rows: 150px 1fr;
+    grid-template-columns: 250px 1fr;
+}
+
+h1{
+    
+    color: white;
+    
+}
+
+.who-am-i{
+    border: 1px solid green;
+    grid-area: who-am-i;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+main{
+    border: 1px solid blue;
+    grid-area: main;
+    width: 80vw;
+}
+
+aside{
+    border: 1px solid red;
+    grid-area: aside;
+}
+
+
+.paragraph {
+    border: 1px solid rgb(107, 6, 6);
+    
+    
+    margin-bottom: 20px;
+
+    line-height: 25px
+
+    
+
+}
+
+.my-email, .my-phone{
+    text-decoration: none;
+    font-style: normal;
+    background-color: #e1e1e6;
+    color: black;
 }
