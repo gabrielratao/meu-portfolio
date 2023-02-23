@@ -158,17 +158,20 @@ img{
 
 .back-initial-page{
     
-    width: 10vw;
-    height: 4vh;
+    width: 12vw;
+    height: 5vh;
 
     display: flex;
     justify-content: center;
     align-items: center;
 
-    background-color: white;
-    text-decoration: none;
-    color: black;
+    background-color: rgb(107, 6, 6);
     border-radius: 10px;
+
+    text-decoration: none;
+    font-weight: 600;
+    color: white;
+    
 }
 
 
