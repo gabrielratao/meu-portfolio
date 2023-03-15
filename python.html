@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gabriel - Python</title>
+
+    <link rel="stylesheet" href="./style_python.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    
+    <header>
+        <h1>Meus Projetos em Python</h1>
+        <a href="./index.html" class="back-initial-page">Voltar ao Portfolio</a>
+        
+    </header>
+
+    <section class="my-projects">
+        
+        <!--linha 1-->
+        <div class="aside-project-one">
+
+           <h2>Análise Vacinação COVID-19 pelo Mundo</h2>
+
+           <a href="./assets/project-one-fig1.png" target="_blank">
+            <img src="./assets/project-one-fig1.png" alt="numero_vacinados" class="images" title="imagem 1 do projeto 1">
+           </a>
+           
+           <a href="./assets/project-one-fig2.png" target="_blank">
+            <img src="./assets/project-one-fig2.png" alt="" class="images" title="imagem 2 do projeto 1">
+           </a>
+           
+        </div>
+
+        <div class="about-project-one">
+
+            <div class="text-about-project">
+                <p>
+                    Projeto dedicado para criar gráficos através do <strong>Python</strong> com bases de  dados  <strong>Excel</strong> disponibilizadas por <strong>Oxford</strong>.
+                </p>
+                <p>
+                    Durante a pandemia, Oxford estava disponibilizando dados que indicavam como estava a situação de cada país: número de mortes, número de vacinação, número de infectados, entre outros. 
+                </p>
+                <p>
+                    No sistema deles, era possível gerar imagens incríveis a partir das entradas que o usuário gostaria de enxergar. E eu quis recriar um desses gráficos. Como é o caso das imagens ao lado. Baixei os dados em formato de Excel e trabalhei em cima deles para criar essa figura utilizando as bibliotecas <strong>Matplotlib e Pandas</strong>.
+
+                </p>
+            </div>
+
+            <div class="used-tec">
+                <strong class="title-used-tec">Tecnologias Utilizadas</strong>
+                
+                <ul>
+                    <br>
+                    <li>Python: Matplotlib e Pandas</li>
+                    <li>Excel: Base de Dados</li>
+                    <li>Git e GitHub</li>
+                </ul>
+                <br>
+                <p class="direct-git">
+                    Acesse o código no meu GitHub:
+                </p>
+
+                <a href="https://github.com/gabrielratao/analiseVacinacaoCovid19" class="git-acess" target="_blank">
+                    <img src="./assets/github-mark.png" alt="ícone GitHub" class="git-icon">
+                </a>
+
+            </div>
+            
+
+        </div>
+
+        <!--linha 2-->
+        <div class="aside-project-two">
+
+            <h2>Análise das Queimadas da Amazônia</h2>
+
+            <a href="./assets/project-two-fig1.png" target="_blank">
+                <img src="./assets/project-two-fig1.png" alt="figura projeto dois" title="Imagem projeto 2" class="images">
+            </a>
+            
+
+        </div>
+
+        <div class="about-project-two">
+
+            <div class="text-about-project">
+                <p>
+                    Projeto dedicado para comparar o número de focos de calor entre a região norte do Brasil em relação a quantidade total do país.
+                </p>
+
+                <p>
+                    O estudo foi feito através de uma base de dados em Excel disponibilizada pelo IBGE. 
+                </p>
+
+                <p>
+                    Nesse projeto, utilizei Python para importar os dados, obter a correlação entre eles e criar a figura.
+                </p>
+
+                <p>
+                    Optei por calcular a correlação entre os dados para identificar se existe uma relação direta com o aumento no número de focos de calor na região norte em relação ao restante do país. O resultado foi de mais de 90% de relação direta.
+                </p>
+
+            </div>
+
+            <div class="used-tec">
+                <strong class="title-used-tec">Tecnologias Utilizadas</strong>
+                
+                <ul>
+                    <br>
+                    <li>Python: Matplotlib e Pandas</li>
+                    <li>Excel: Base de Dados</li>
+                    <li>Git e GitHub</li>
+                </ul>
+                <br>
+                <p class="direct-git">
+                    Acesse o código no meu GitHub:
+                </p>
+                  
+                <a href="https://github.com/gabrielratao/queimadasAmazonia" class="git-acess" target="_blank">
+                    <img src="./assets/github-mark.png" alt="ícone GitHub" class="git-icon">
+                </a>
+
+            </div>
+        </div>
+
+
+
+         <!--linha 3-->
+         <div class="aside-project-three">
+
+            <h2>Manipulando Arquivos Multidimensionais</h2>
+            
+            <p>
+                Aqui está a solução que entrei em <strong>Python</strong>
+            </p>
+
+            <pre>
+                <code>
+                    import xarray as xr
+                    import numpy as np
+                    import pandas as pd
+    
+                    data = xr.open_dataset(r'arquivo.nc4') #arquivo netcdf
+                    CO = np.array(data.variables['COSC'][:,:,0])
+                    CO_2D = CO.flatten()
+                    CO_2D = pd.DataFrame(CO.flatten())
+                </code>
+            </pre>
+                
+            
+            
+         </div>
+ 
+         <div class="about-project-three">
+
+            <div class="text-about-project">
+
+                <p>
+                    No início do meu período de trabalho no LCQAr, eu desenvolvia uma pesquisa de análise dos dados do <strong>satelite MERRA da Nasa</strong>. 
+                </p>
+                <p>
+                    Os dados analisados eram meteorólogicos e de certa região geografica. Portanto, eram dados Multidimensionais com diversas informações. 
+                </p>
+                <p>
+                    Para conseguir ler esses dados e manipulá-los eu utilizei um <strong>código em Python</strong>  para diminuir as dimensões do arquivo para 1 só e poder utilizar os dados na pesquisa.
+                </p>
+            </div>
+
+            <div class="used-tec">
+                <strong class="title-used-tec">Tecnologias Utilizadas</strong>
+                
+                <ul>
+                    <br>
+                    <li>Python: Xarray, Numpy e Pandas</li>
+                    <li>MERRA - Nasa: Base de Dados</li>
+                    <li>Git e GitHub</li>
+                </ul>
+                <br>
+                <p class="direct-git">
+                    Acesse o código no meu GitHub:
+                </p>
+
+                <a href="https://github.com/gabrielratao/leituraArquivo_netcdf" class="git-acess" target="_blank">
+                    <img src="./assets/github-mark.png" alt="ícone GitHub" class="git-icon">
+                </a>
+
+            </div>
+            
+ 
+         </div>
+
+          <!--linha 4-->
+        <div class="aside-project-four">
+
+            <h2>Análise dos Dados da Estação Meteorológica da UFSC</h2>
+
+            <a href="./assets/project-four-fig1.png">
+                <img src="./assets/project-four-fig1.png" alt="imagem projeto 4" title="imagem projeto 4" class="images">
+            </a>
+        </div>
+
+        <div class="about-project-four">
+            
+            <div class="text-about-project">
+                <p>
+                    No meu período de trabalho no LCQAr, eu tive acesso aos dados meteorológicos da estação que está situada dentro da UFSC.
+                </p>
+
+                <p>
+                    Desenvolvi uma figura com 3 gráficos para uma análise temporal dos dados de Temperatura, Umidade e Material Particulado de 2014 a 2020.
+                </p>
+
+                <div class="used-tec">
+                    <strong class="title-used-tec">Tecnologias Utilizadas</strong>
+                    
+                    <ul>
+                        <br>
+                        <li>Python: Matplotlib e Pandas</li>
+                        <li>Estação Meteorológica UFSC: Base de Dados</li>
+                        <li>Git e GitHub</li>
+                    </ul>
+                    <br>
+                    <p class="direct-git">
+                        Acesse o código no meu GitHub:
+                    </p>
+    
+                    <a href="https://github.com/gabrielratao/analiseTemporal_BU_UFSC" class="git-acess" target="_blank">
+                        <img src="./assets/github-mark.png" alt="ícone GitHub" class="git-icon">
+                    </a>
+    
+                </div>
+
+            </div>
+
+        </div>
+
+         <!--linha 5-->
+         <div class="aside-project-five">
+
+            <h2>Análise da Expectativa de Vida do Brasil</h2>
+
+            <a href="./assets/project-five-fig1.png">
+                <img src="./assets/project-five-fig1.png" alt="imagem projeto 5" title="imagem projeto 5" class="images">
+            </a>
+        </div>
+
+        <div class="about-project-five">
+            
+            <div class="text-about-project">
+
+                <p>
+                    Nesse projeto, quis aplicar os conceitos de desvio padrão dentro de uma base de dados.
+                </p>
+                <p>
+                    Obtive as informações da expectativa de vida do Brasil, disponibilizado pelo IBGE, e utilizei Python para aplicar cálculos de Média, Variância e Desvio Padrão.
+                </p>
+            </div>
+
+            <div class="used-tec">
+                <strong class="title-used-tec">Tecnologias Utilizadas</strong>
+                
+                <ul>
+                    <br>
+                    <li>Python: Matplotlib e Pandas</li>
+                    <li>Estatística: Desvio Padrão</li>
+                    <li>Git e GitHub</li>
+                </ul>
+                <br>
+                <p class="direct-git">
+                    Acesse o código no meu GitHub:
+                </p>
+
+                <a href="https://github.com/gabrielratao/expectativaVidaBR" class="git-acess" target="_blank">
+                    <img src="./assets/github-mark.png" alt="ícone GitHub" class="git-icon">
+                </a>
+
+            </div>
+        </div>
+
+        <section class="end-page">
+            <a href="./index.html" class="back-initial-page2">Voltar ao Portfolio</a>
+
+        </section>
+        
+
+    </section>
+
+
+</body>
+</html>

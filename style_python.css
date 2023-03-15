@@ -1,0 +1,255 @@
+*{
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0;
+   
+}
+
+body{
+    
+    background-color: rgb(107, 6, 6);
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(rgb(107, 6, 6), #121214);
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.back-initial-page{
+    
+    margin-left: 100px;
+    width: 12vw;
+    height: 5vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgb(107, 6, 6);
+    border: 1px solid black;
+    border-radius: 10px;
+
+    text-decoration: none;
+    font-weight: 600;
+    color: white;
+
+
+    
+}
+
+h1{
+    text-align: center;
+    color: aliceblue;
+    margin-left: 4vw;
+    
+  
+    
+}
+
+.my-projects{
+    display: grid;
+    grid-template-areas: 
+    "aside-project-one about-project-one"
+    "aside-project-two about-project-two"
+    "aside-project-three about-project-three"
+    "aside-project-four about-project-four"
+    "aside-project-five about-project-five"
+    "end-page end-page";
+
+    
+    grid-template-columns: 40vw 1fr;
+    
+
+}
+
+
+.aside-project-one{
+    grid-area: aside-project-one;
+    background: linear-gradient(rgb(107, 6, 6), #121214);
+    margin-bottom: 50px;
+   
+}
+
+.about-project-one{
+    grid-area: about-project-one;
+    background: linear-gradient(rgb(107, 6, 6), #121214);
+    margin-bottom: 50px;
+
+}
+
+.aside-project-two{
+    grid-area: aside-project-two;
+    background: linear-gradient(rgb(107, 6, 6), #121214);
+    margin-bottom: 50px;
+    
+    
+}
+
+.about-project-two{
+    grid-area: about-project-two;
+    background: linear-gradient(rgb(107, 6, 6), #121214);
+    margin-bottom: 50px;
+    
+
+    
+}
+
+.aside-project-three{
+    grid-area: aside-project-three;
+    background: linear-gradient(rgb(107, 6, 6), #121214);
+    margin-bottom: 50px;
+    
+    
+}
+
+.about-project-three{
+    grid-area: about-project-three;
+    background: linear-gradient(rgb(107, 6, 6), #121214);
+    margin-bottom: 50px;
+    
+    
+}
+
+.aside-project-four{
+    grid-area: aside-project-four;
+    background: linear-gradient(rgb(107, 6, 6), #121214);
+    margin-bottom: 50px;
+    
+    
+}
+
+.about-project-four{
+    grid-area: about-project-four;
+    background: linear-gradient(rgb(107, 6, 6), #121214);
+    margin-bottom: 50px;
+    
+    
+}
+
+.aside-project-five{
+    grid-area: aside-project-five;
+    background: linear-gradient(rgb(107, 6, 6), #121214);
+    
+    
+    
+}
+
+.about-project-five{
+    grid-area: about-project-five;
+    background: linear-gradient(rgb(107, 6, 6), #121214);
+    
+    
+    
+}
+
+.text-about-project{
+    margin-top: 20px;
+    margin-right: 100px;
+}
+
+
+section{
+    
+    color:rgb(255, 255, 255);
+}
+
+.my-projects{
+    margin-left: 20px;
+    
+    
+}
+
+.images{
+    
+    
+    margin-bottom: 10px;
+    border-radius: 30px;
+
+    width: 35vw;
+    height: 45vh;
+}
+
+
+
+.used-tec{
+    background-color: white;
+    color: black;
+
+
+    border-radius: 40px;
+
+    margin-left: 5em;
+    margin-top: 5em;
+
+    width: 30vw;
+    height: 30vh;
+}
+
+.title-used-tec{
+    margin-top: 10px;
+    margin-left: 8em;
+    
+}
+
+.direct-git{
+    margin-left: 5em;
+}
+
+.git-acess{
+    background-color: white;
+    border-radius: 100px;
+    width: 7vh;
+    height: 7vh;  
+
+    margin-left: 11em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-decoration: none;
+    color: black;
+
+    transition: .35s;
+    cursor: pointer;
+}
+
+.git-acess:hover{
+    background-color: blueviolet;
+    color: white;
+}
+
+.git-icon{
+    width: 7vh;
+    height: 7vh;
+}
+
+.end-page{
+    height: 20vh;
+    grid-area: end-page;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.back-initial-page2{
+    width: 12vw;
+    height: 5vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgb(107, 6, 6);
+    border: 1px solid black;
+    border-radius: 10px;
+
+    text-decoration: none;
+    font-weight: 600;
+    color: white;
+
+}
