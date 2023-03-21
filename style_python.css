@@ -4,28 +4,47 @@
    
 }
 
-body{
-    
-    background-color: rgb(107, 6, 6);
-}
+:root {
+    --collor-project-one: rgb(46, 46, 46);
+    --collor-project-two: rgb(84, 84, 84);
+    --collor-project-three: rgb(46, 46, 46);
+    --collor-project-four: rgb(84, 84, 84);
+    --collor-project-five: rgb(46, 46, 46);
+  }
+
+
 
 header{
-    display: flex;
-    justify-content: center;
+    height: 30vh;
     background: linear-gradient(rgb(107, 6, 6), #121214);
-    margin-bottom: 50px;
-    margin-top: 50px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    
 }
 
-.back-initial-page{
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
     
-    margin-left: 100px;
+}
+
+.menu-buttons{
+    
     width: 12vw;
     height: 5vh;
 
     display: flex;
     justify-content: center;
     align-items: center;
+
+    margin-top: 7vh;
+    margin-left: 2vw;
+    
 
     background-color: rgb(107, 6, 6);
     border: 1px solid black;
@@ -59,78 +78,82 @@ h1{
     "end-page end-page";
 
     
-    grid-template-columns: 40vw 1fr;
+    grid-template-columns: 45vw 1fr;
+    
+    
     
 
 }
 
+.project-one, .project-two, .project-three, .project-four, .project-five{
+    margin-top: 10vh;
+    margin-left: 5vw;
+}
+
+
+
 
 .aside-project-one{
     grid-area: aside-project-one;
-    background: linear-gradient(rgb(107, 6, 6), #121214);
-    margin-bottom: 50px;
+    background-color: var(--collor-project-one);
+    /*background: linear-gradient(rgb(107, 6, 6), #121214);*/
+    
+    
    
 }
 
 .about-project-one{
     grid-area: about-project-one;
-    background: linear-gradient(rgb(107, 6, 6), #121214);
-    margin-bottom: 50px;
+    /*background: linear-gradient(rgb(107, 6, 6), #121214);*/
+    background-color: var(--collor-project-one);
+    
 
 }
 
 .aside-project-two{
     grid-area: aside-project-two;
-    background: linear-gradient(rgb(107, 6, 6), #121214);
-    margin-bottom: 50px;
-    
-    
+    background: var(--collor-project-two);
+ 
 }
 
 .about-project-two{
     grid-area: about-project-two;
-    background: linear-gradient(rgb(107, 6, 6), #121214);
-    margin-bottom: 50px;
-    
-
-    
+    background: var(--collor-project-two);
+  
 }
 
 .aside-project-three{
     grid-area: aside-project-three;
     background: linear-gradient(rgb(107, 6, 6), #121214);
-    margin-bottom: 50px;
-    
-    
+    background: var(--collor-project-three);
+ 
 }
 
 .about-project-three{
     grid-area: about-project-three;
     background: linear-gradient(rgb(107, 6, 6), #121214);
-    margin-bottom: 50px;
-    
+    background: var(--collor-project-three);
     
 }
 
 .aside-project-four{
     grid-area: aside-project-four;
     background: linear-gradient(rgb(107, 6, 6), #121214);
-    margin-bottom: 50px;
-    
+    background: var(--collor-project-four);
     
 }
 
 .about-project-four{
     grid-area: about-project-four;
     background: linear-gradient(rgb(107, 6, 6), #121214);
-    margin-bottom: 50px;
-    
-    
+    background: var(--collor-project-four);
+       
 }
 
 .aside-project-five{
     grid-area: aside-project-five;
     background: linear-gradient(rgb(107, 6, 6), #121214);
+    background: var(--collor-project-five);
     
     
     
@@ -139,6 +162,7 @@ h1{
 .about-project-five{
     grid-area: about-project-five;
     background: linear-gradient(rgb(107, 6, 6), #121214);
+    background: var(--collor-project-five);
     
     
     
@@ -155,11 +179,7 @@ section{
     color:rgb(255, 255, 255);
 }
 
-.my-projects{
-    margin-left: 20px;
-    
-    
-}
+
 
 .images{
     
@@ -182,6 +202,8 @@ section{
 
     margin-left: 5em;
     margin-top: 5em;
+    margin-bottom: 5em;
+
 
     width: 30vw;
     height: 30vh;
@@ -226,11 +248,13 @@ section{
 }
 
 .end-page{
+    background: linear-gradient(rgb(107, 6, 6), #121214);
     height: 20vh;
+    
     grid-area: end-page;
 
     display: flex;
-    flex-direction: column;
+    
     justify-content: center;
     align-items: center;
     
@@ -239,7 +263,7 @@ section{
 .back-initial-page2{
     width: 12vw;
     height: 5vh;
-
+    margin-left: 2vw;
     display: flex;
     justify-content: center;
     align-items: center;
