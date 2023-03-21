@@ -62,9 +62,10 @@ h1{
     text-align: center;
     color: aliceblue;
     margin-left: 4vw;
-    
-  
-    
+}
+
+p{
+    padding-bottom: 20px;
 }
 
 .my-projects{
@@ -124,53 +125,44 @@ h1{
 
 .aside-project-three{
     grid-area: aside-project-three;
-    background: linear-gradient(rgb(107, 6, 6), #121214);
     background: var(--collor-project-three);
  
 }
 
 .about-project-three{
     grid-area: about-project-three;
-    background: linear-gradient(rgb(107, 6, 6), #121214);
     background: var(--collor-project-three);
     
 }
 
 .aside-project-four{
     grid-area: aside-project-four;
-    background: linear-gradient(rgb(107, 6, 6), #121214);
     background: var(--collor-project-four);
     
 }
 
 .about-project-four{
     grid-area: about-project-four;
-    background: linear-gradient(rgb(107, 6, 6), #121214);
     background: var(--collor-project-four);
        
 }
 
 .aside-project-five{
     grid-area: aside-project-five;
-    background: linear-gradient(rgb(107, 6, 6), #121214);
     background: var(--collor-project-five);
-    
-    
     
 }
 
 .about-project-five{
     grid-area: about-project-five;
-    background: linear-gradient(rgb(107, 6, 6), #121214);
     background: var(--collor-project-five);
     
-    
-    
+
 }
 
 .text-about-project{
-    margin-top: 20px;
     margin-right: 100px;
+    
 }
 
 
@@ -194,10 +186,15 @@ section{
 
 
 .used-tec{
+
+    width: 30vw;
+    height: 30vh;
+
     background-color: white;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0.2);
     color: black;
 
-
+    padding: 10px;
     border-radius: 40px;
 
     margin-left: 5em;
@@ -205,8 +202,7 @@ section{
     margin-bottom: 5em;
 
 
-    width: 30vw;
-    height: 30vh;
+    
 }
 
 .title-used-tec{
@@ -215,9 +211,7 @@ section{
     
 }
 
-.direct-git{
-    margin-left: 5em;
-}
+
 
 .git-acess{
     background-color: white;
