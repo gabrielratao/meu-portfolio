@@ -2,305 +2,509 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Porfolio Gabriel Ratão</title>
+    <title>Portifolio Gabriel Ratão</title>
 
     <link rel="stylesheet" href="./style.css">
 
+     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    
+    <script src="./scripts.js"></script>
 </head>
 <body>
 
-    <header id="main-header">
-        <img src="./assets/minha-imagem.png" alt="Imagem de Perfil" class="my-picture">
-        <p class="my-info"><strong style="font-size: 25px;">Gabriel Ratão | Desenvolvedor</strong><br>24 anos, Floripa</p>
-        
+    <header id="header">
+        <div class="welcome" id="header-text-portifolio"><p><strong>Portifolio</strong></p></div>
+        <div class="nav-bar" id="nav-bar">
+            <a href="./index.html" class="nav-bar-item" id="header-line1">Home</a>
+            <a href="#about-me" class="nav-bar-item" id="header-line2">Sobre mim</a>
+            <a href="#experience" class="nav-bar-item" id="header-line3">Experiência</a>
+            <a href="#contact" class="nav-bar-item" id="header-line4">Contato</a>
+            <a href="./assets/Currículo - Gabriel Ratão.pdf" class="nav-bar-item" id="header-line4" target="_blank">Currículo</a>
+        </div>
     </header>
 
+    
+    <main id="main-page">
 
-    <div class="my-projects">
-     
-        <a href="#about-me" class="item" target="_self">🔍 Sobre Mim</a>
-
-        <a href="./assets/Currículo - Gabriel Ratão.pdf" class="item" target="_blank">📚 Currículo</a>
-
-        <a href="./python.html" class="item" target="_blank">🐍 Projetos em Python</a>
-        <a href="#server-side-projects" class="item" target="_blank">⚙ Projetos Back - End</a>
-
-        <!--
-            <a href="./assets/Currículo - Gabriel Ratão.pdf" class="item" download="Currículo - Gabriel Ratão.pdf">📚 Currículo</a>
-        -->
-
-        <a href="https://gabrielratao.github.io/nlw-setup/" class="item" target="_blank">✅ Habbit Tracker</a>
-        <a href="https://gabrielratao.github.io/snap-clima/" class="item" target="_blank">🌄 SnapClima</a>
-
-       
-    </div>
-
-    <div class="contacts">
-        <a href="https://github.com/gabrielratao" class="contact1" target="_blank"><img src="./assets/github-mark.png" alt="ícone GitHub"></a>
-        <a href="https://www.linkedin.com/in/gabriel-rat%C3%A3o-33aaa41b1/" class="contact2" target="_blank"><img src="./assets/linkedin-icon.png" alt="Ícone Linkedin" class="linkedin-icon"></a>
-    </div>
-
-
- 
-    <section id="about-me">
-
-        <div class="who-am-i">
-            <h1>Sobre Mim</h1>
-        </div>
         
-        
-        <aside>
-        
-            <h2>Contato</h2>
-            <address>
-                <p class="my-email">gabiratao28@gmail.com</p>
-                <!--
-                <a href="mailto:gabiratao28@gmail.com" class="my-email">gabiratao28@gmail.com</a><br>
-                --> 
-            </address>
-            
-            <h2>Habilidades</h2>
-            
-            <ul class="skills">
-                <li>HTML, CSS e JavaScript (Node.JS) - Básico</li>
-                <li>Git e GitHub - Básico</li>
-                <li>Python - Intermediário</li>
-                <li>C/C++ Arduino - Básico</li>
-                <li>Canva - Regular</li>
-                <li>Pacote Office - Regular</li>
-                <li>Linux - Básico</li>
-            </ul>
 
-            
-            <h2>Graduação</h2>
+        <section class="left-side" id="left-side">
 
-            <ul class="graduation">
-                <li>
-                    <strong>CESUSC | Atualmente</strong>
-                    <p>
-                        1a fase: Análise e Desenvolvimento de Sistemas 
-                    </p>  
-                </li>
-                <br>
+            <div class="left-side-content">
 
-                <li>
-                    <strong>UFSC | Trancado</strong>
-                    <p>
-                        5a fase: Engenharia Sanitária e Ambiental 
-                    </p>
-                </li>
-            </ul>
-
-
-            <h2>Idiomas</h2>
-
-            <ul>
-                <li>Português - Nativo Brasileiro</li>
-                <br>
-                <li>Inglês - Avançado</li>
-            </ul>
-
-        </aside>
-    
-        <main>
-    
-            <div class="paragraph">
-                <h2>Quem sou Eu?</h2>
-                <p>
-                    Sou um jovem que ama tecnologia, e fico cada vez mais fascinado com o potencial que ela tem de facilitar e melhorar a vida das pessoas.
-                </p>
-
-                <p>
-                    Gosto muito de aprender novas tecnologias, tive mais contato com Ciência de Dados através do <strong>Python</strong> e estou me aprofundando nos estudos de desenvolvimento WEB: HTML, CSS e JavaScript.
-                </p>
-               
-                <p>
-                    Recentemente troquei de faculdade, fui da Engenharia Sanitária e Ambiental (UFSC) para o curso de Análise e Desenvolvimento de Sistemas (CESUSC). Quando comecei a estudar programação em 2020 no Python, percebi uma nova paixão minha: Desenvolver sistemas. A possibilidade de poder criar coisas incríveis no meu computador ressignificou a minha vida. Desde então busquei conhecimento por conta própria e quero me desenvolver ainda mais!
-
-                </p>
-                <p>
-                    Nasci na cidade de São Paulo, e moro em Florianópolis desde antes de completar 1 ano de idade.
-                </p>
-               
-            </div>
-    
-            
-    
-            <div class="paragraph">
-                <h2  id="server-side-projects">Experiência de Trabalho</h2>
-
-                <p>
-                    <strong>1) Estágio Pessoalize - Banco de Dados e Desenvolvimento Back - End | 2023 
-                    </strong>
-                </p>
-
-                <p>
-                    Principais tecnologias utilizadas: Python, PostgreSQL, AWS, Cyber Duck (SFTP), GitHub e Metabase.
-                </p>
-
-                <p>
-                    No time de BI da Pessoalize pude explorar diversas possibilidades de desenvolvimento tecnológico que agregaram valor ao negócio. Aprendi muito sobre banco de dados SQL, desenvolvimento de rotinas server side e visão analítica sobre modelo de negócio.
-
-                </p>
-
-                <h3>PRINCIPAIS ATIVIDADES SERVER SIDE</h3>
-
+                <div class="son-left-side-text">
                 
-
-                <p>
-                    - Desenvolvimento de rotinas de <strong>ETL</strong> (Extração, Transformação e Carga de dados):
-                </p>
-
-                <p>
-                    <strong>Extração:</strong> Web Scraping utilizando pacote Selenium no Python para extrair relatórios de atendimento das operações em plataformas diversas na WEB;
-                    <strong>Transformação</strong>: Aplicação das regras de negócio, limpeza dos dados inválidos, adição de dados e normalização utilizando pacotes do Python: Pandas, Numpy etc;
-                    <strong>Carga:</strong> População do banco de dados PostgreSQL através do Python utilizando pacotes como SQLAlchemy e Pandas. 
-                </p>
-
-                <p>
-                    Todas as rotinas ETL foram adicionadas em máquinas virtuais AWS com sistema operacional Windows e Linux.
-                </p>
-
-                <p>
-                    Para cada etapa do processo eram desenvolvidos scripts separados para manter as boas práticas de organização e facilidade de manutenção, bem como aplicar os métodos de versionamento através do GitHub. 
-                </p>
-
-                <p>
-                    Nas rotinas desenvolvidas foram criadas documentações para demonstrar seu objetivo e o funcionamento de cada etapa dos projetos.
-                </p>
-
-                <p>
-                    Para o desenvolvimento dessas rotinas utilizava-se criação de ambientes virtuais,  utilização de processos SFTP através de ligação do Python com Cyber Duck, Visual Studio Code e GitHub. Além disso, utilizava-se API do slack nos scripts para informar ao time eventuais problemas que poderiam ocorrer nos códigos.
-                </p>
-                <br>
-
-                <p>- Manutenção e monitoramento de rotinas já existentes:</p>
-
-                <p>
-                    Responsável por corrigir erros em rotinas de  automatização e identificar e aplicar melhorias de desempenho como rapidez e performance de hardware. 
-                </p>
-
-                <br>
-                <p>
-                    - Automatização de processos
-                </p>
-
-                <p>
-                    Automatização do preenchimento de relatórios Excel utilizando Python e Banco de Dados;
-                </p>
-
-                <p>
-                    Captação de relatórios em plataformas WEB e envio ao time utilizando Selenium através do Python.
-                </p>
-
-                <br>
-
-                <h3>PRINCIPAIS ATIVIDADES BANCO DE DADOS (PostgreSQL)</h3>
-
-                <p>
-                    Desenvolvimento e melhoria de Dashboards a partir de consultas SQL;
-                </p>
-
-                <p>
-                    Criação de consultas SQL para relatórios de desempenho das operações, com diversas junções de tabelas distintas e com regras de negócio;
-                </p>
-
-                <p>
-                    Validação de dados de relatórios através de consultas no banco de dados.
-                </p>
-
-                <br>
-                <br>
-                <p><strong>2) Laboratório de Controle e Qualidade do Ar ( LCQAr - UFSC ) | 2021 - 2022</strong></p>
-                <p>
-                    No LCQAr pude começar a desenvolver minhas habilidades de desenvolvimento. Atuei em dois grandes projetos: 
-                </p>
-                <ul>
-                    <li>
-                        Medição da Qualidade do Ar de Baixo Custo;
-                    </li>
-                    <li>
-                        Poluição Atmosférica na Água da Chuva.
-                    </li>
-                </ul>
-
-                <p>
-                    Em ambos projetos eu auxiliava no desenvolvimento do software e do hardware dos equipamentos utilizando <strong>C/C++</strong> e também <strong>Python</strong>  para análise de dados.
-                </p>
-
-                <p>
-                    <strong>Artigo Científico</strong>
-                </p>
-
-                <p>
-                    No projeto de Medição da Qualiade do Ar de Baixo Custo, desenvolvemos um <a href="https://www.sciencedirect.com/science/article/pii/S1364815223000506">Arigo Científco</a> publicado na Revista <a href="https://www.sciencedirect.com/journal/environmental-modelling-and-software">Environmental Modelling & Software</a>
-                </p>
-
-                <p>
-                    <strong>Um pouco mais sobre os projetos no LCQAr:</strong>
-                </p>
-
-                <p>
-                    No projeto de Medição da Qualidade do Ar, a minha atuação, além do auxílio no desenvolvimento do software e hardware, foi na Coleta e Análise dos Dados da qualidade do ar obtidos, elaboração de Guias e Tutoriais sobre como utilizar nosso equipamento, através de uma página da WEB em WordPress, e Instalação e Manutenção dos materiais em campo.  
-                </p>
-
-                <p>
-                    No segundo projeto, a minha atuação foi no desenvolvimento do Hardware e Software de um protótipo para captação da água da chuva, o qual utilizava um Arduino para controlar um StepMotor, bem como um sensor de Temperatura e Umidade e o Armazenamento dos dados por um Cartão SD.
-                </p>
-
-                <p>
-                    Em ambos os projetos meu ambiente de desenvolvimento utilizava o <strong>Visual Studio Code</strong>  com a extensão <em>PlatformIO</em>  e também <strong>Git, GitHub e GitLab</strong>  para armazenamento de códigos e desenvolvimento em equipe.
-                </p>
-
-                <p>
-                    <strong><br>3) Desenvolvedor WordPress | 2021</strong>
+                    <h1 id="h1-text">Olá :) <br>Eu sou <span class="my-name">Gabriel Ratão</span> <br>Desenvolvedor</h1>
+    
+                    <!-- <h2>Gabriel Ratão | Desenvolvedor</h2>
+                    <span>23 anos, Floripa</span> -->
+        
+                </div>
+        
+                
+                <div class="son-left-side">
+                    <!-- <a href="./assets/Currículo - Gabriel Ratão.pdf" class="item" target="_blank">📚 Currículo</a> -->
+                    <a href="#projects" class="item" >👨🏽‍💻 Meus Projetos</a>
                     
-                </p>
+                    <div class="list-tech">
+                        <a href="#data" ><img src="./assets/python-color-icon.png" alt="Python icon" class="icons-list-tech"></a>
+                        <a href="#data"><img src="./assets/sql-icon.png" alt="SQL icon" class="icons-list-tech"></a>
+                        <a href="#node"><img src="./assets/node-js-icon.jpg" alt="Node.JS icon" class="icons-list-tech"></a>   
+                    </div>
+                    
+        
+                    <!-- <a href="#about-me" class="item" target="_self">🔍 Sobre Mim</a> -->
+        
+                    <!-- <a href="./python.html" class="item" target="_blank">🐍 Projetos em Python</a>
+                    <a href="https://gabrielratao.github.io/nlw-setup/" class="item" target="_blank">✅ Habbit Tracker</a>
+                    <a href="https://gabrielratao.github.io/snap-clima/" class="item" target="_blank">🌄 SnapClima</a>  -->
+        
+                </div>
 
-                <p>
-                    Freelance de desenvolvimento do WEB Site da empresa <a href="https://lmacoinox.com/" style="color: #e1e1e6" target="_blank">LM - Aço Inox</a>  em WordPress. A empresa necessitava de um site simples de fácil acesso aos produtos, contatos e sobre sua história no mercado.
-                </p>
-                
-                <p>
-                    <strong><br>4) Empresa Júnior de Eng Sanitária e Ambiental ( <a href="https://ejesam.com.br/" style="color: #e1e1e6" target="_blank">EJESAM </a>- UFSC ) | 2019 </strong>
-                </p>
-
-                <p>
-                    <strong>Presidente | 2019.2</strong>
-                </p>
-
-                <p>
-                    Como presidente tive grandes desafios para cumprir. Minha empresa júnior ainda era um pouco imatura e eu deseja muito um grande sucesso coletivo. E conseguimos. Ganhamos diversos prêmios de Empresa Júnior com destaque Nacional, pelos grandes resultados de faturamento obtidos e por projetos que atingiram os índices dos Objetivos de Desenvolvimento Sustentável da ONU. 
-                </p>
-
-                <p>
-                    Além disso, minhas funções também eram sobre: Definição e acompanhamento dos indicadores e metas da empresa, formação de liderança, parcerias e conselheiro da <a href="https://www.fejesc.com.br/" style="color: #e1e1e6" target="_blank">FEJESC</a>.
-                </p>
-
-                <p>
-                    <strong>Diretor de Vendas, Marketing e Projetos | 2019.1 </strong>
-                </p>
-
-                <p>
-                    No primeiro semestre de 2019 eu assumi como diretor de todas as áreas do comercial e projetos. Provavelmente tenha sido o maior desafio do ano, visto que no semestre anterior eu era trainee da empresa e calouro da UFSC. Tudo era muito novo pra mim, mas com muitos erros e resiliência consegui, juntamente com meu time, atingir números nunca alcançados pela empresa antes.
-                </p>
-
-                <p>
-                    Minhas funções neste cargo eram: Garantir o crescimento sustentável da empresa, projetos de qualidade e estruturar a área de marketing. Mandato finalizado com 3x vezes o faturamento do ano anterior. 
-                </p>
             </div>
             
-            <a href="#main-header" class="back-initial-page">Voltar ao Topo</a>
+        </section>
     
+        <section class="right-side" id="right-side">
             
-        </main>
+            <img src="./assets/minha-imagem.png" alt="minha foto"  class="my-image">
+    
+        
+            <div class="right-side-buttons">
+                <a href="https://github.com/gabrielratao" class="contact1" target="_blank"><img src="./assets/github-mark.png" alt="ícone GitHub" class="github-icon"></a>
+                <a href="https://www.linkedin.com/in/gabriel-rat%C3%A3o-33aaa41b1/" class="contact2" target="_blank"><img src="./assets/linkedin-icon.png" alt="Ícone Linkedin" class="linkedin-icon"></a>
+            </div>
+    
+        </section>
+    
+        
+    </main>
+
+
+    
+    <section class="projects-title" id="projects">
+        <br>
+        <br>
+        <h2>Minhas Habilidades</h2>
+        
+        <br>
     </section>
-    <script src="./scripts.js"></script>
+    
+    <section class="projects">
+
+        
+        <a href="#data" class="project">
+            
+            <div class="project-description">
+                <p>Engenharia de dados</p>
+            </div>
+
+        </a>
+
+        <a href="#web-dev" class="project">
+
+            <div class="project-description">
+                <p>Desenvolvimento WEB</p>
+            </div>
+
+        </a >
+
+        <a href="#job-experience" class="project" id="experience">
+
+            <div class="project-description">
+                <p>Experiência mercado</p>
+            </div>
+
+        </a>
+
+
+    </section>
+
+    <section class="projects-description">
+        <br>
+        <br>
+        <br>
+        <h3 id="data">Engenharia de Dados</h3>
+
+        <br>
+        <strong style="color: #0073e6;">ETL | Python PostgreSQL</strong>
+
+        <p>
+            No meu estágio atual na <a href="https://pessoalize.com/" target="_blank">pessoalize</a>  sou responsável pelo desenvolvimento de rotinas ETL e garantir que o pipeline de dados esteja funcionando corretamente para os analistas de dados poderem fazer seu trabalho.
+        </p>
+
+        <p>
+            Para isso, aplico técnicas de <strong>webscraping</strong>  através da biblioteca selenium do Python para extrair diversos relatórios em diferentes padrões de plataformas.
+        </p>
+
+        <p>
+            Além disso, aplico estratégias de tratamento de dados para manter o padrão do nosso banco de dados  e eventualmente criação de novas tabelas.
+        </p>
+
+        <p>
+            Dessa forma, consigo fazer o carregamento dos dados ao banco com a maior qualidade desejada possível.
+        </p>
+
+        <br>
+        <strong style="color: #0073e6;">Projeto Prático Faculdade (Parte 1 - banco de dados) | SQL Server</strong>
+
+        <p>
+            No final do segundo semestre de 2023 eu desenvolvi um projeto fullstack na minha faculdade, onde fiquei responsável pelo Banco de dados e Back - end. O projeto consiste na etapa de criação de usuário de uma aplicação futura.
+        </p>
+
+        <p>
+            O que desenvolvi no banco de dados SQL Server:
+            <ul>
+                <li>Modelagem das tabelas e seus relacionamentos. Acesse aqui.</li>
+                <li>Criação de Stored Procedures para realizar CRUD (Criar, Ler, Alterar e Deletar dados) com a inclusão de tratativas de erros e regras de negócio. Acesse os códigos aqui.
+                </li>
+            </ul>
+        </p>
+        <br>
+        <p>
+            Confira mais sobre minhas habilidades com python para analises visuais com python:
+        </p>
+        <a href="./python.html" class="item">🐍 Análises de dados</a>
+        <br>
+        <br>
+        <br>
+    </section>
+
+    <section class="projects-description">
+       
+        <h3 id="web-dev">Desenvolvimento WEB</h3>
+        <br>
+
+        <strong style="color: #0073e6;">API Rick and Morty | API RESTful</strong>
+
+        <p>
+            Desenvolvi uma calculadora WEB que mostra informações de qualquer personagem da série!
+            A calculadora faz uma solicitação na API "Rick and Morty" a partir do cálculo realizado pelo usuário.
+        </p>
+
+        <div class="buttons-project">
+            <a href="https://gabrielratao.github.io/api_rick_morty/" target="_blank" class="item">Teste o projeto online</a>
+            <br>
+            <a href="https://github.com/gabrielratao/api_rick_morty" target="_blank" class="item">Reposítorio GitHub</a>
+            <br>
+            <a href="https://rickandmortyapi.com/" target="_blank" class="item">API utilizada</a> 
+        </div>
+            
+
+
+        
+
+        <p>
+            A resposta da API fornece uma ampla variedade de informações sobre o personagem escolhido. Essas informações são apresentadas ao usuário na forma de uma tabela e uma imagem, detalhando as características do personagem.
+        </p>
+
+        <p>
+            Esse projeto serviu para eu desenvolver estudos sobre consumo de serviço de API RESTful, método HTTP, bem como explorar a manipulação de elementos HTML com JavaScript. Além é claro de juntar duas coisas que eu adoro: Tecnologia e Cultura Pop.
+        </p>
+
+        <p>O endpoint da API consumido no projeto foi: /api/character/:id</p>
+
+        <p>
+            O resultado do cálculo é utilizado como parâmetro "id" no método GET do serviço da API. A função que realiza o consumo da API utiliza o pacote jQuery que tornou o desenvolvimento ainda mais eficiente.
+        </p>
+
+        <p>
+            Esse projeto foi desenvolvido com as seguintes tecnologias:
+            <ul>
+                <li>API RESTful</li>
+                <li>HTML e CSS</li>
+                <li>JavaScript, jQuery</li>
+                <li>Git e Github</li>
+            </ul>
+        </p>
+
+    <br>
+
+    <strong style="color: #0073e6;">Snap Clima  | API Open Weather</strong>
+    <p>
+        Desenvolvi um sistema de consulta da condição climática da sua região via API.
+        Na aplicação você confere diversas informações como: Temperatura, situação do clima (com figura), velocidade do vento, sensação térmica, umidade e horário do nascer e pôr do sol.
+    </p>
+
+    <div class="buttons-project">
+        <a href="https://gabrielratao.github.io/snap-clima/" target="_blank" class="item">Teste o projeto online</a>
+        <br>
+        <a href="https://github.com/gabrielratao/snap-clima" target="_blank" class="item">Reposítorio GitHub</a>
+        <br>
+        <a href="https://openweathermap.org/api" target="_blank" class="item">API utilizada</a>
+    </div>
+
+
+    <p>
+        O projeto utiliza a API fornecida gratuitamente pela OpenWeather que oferece informações meteorológicas a partir da geolocalização do usuário.  Além disso, há a opção de buscar manualmente, por meio da barra de pesquisa, a cidade desejada. A API abrange mais de 200.000 cidades do planeta.
+    </p>
+
+    <p>
+        Site simples, prático e que me permitiu desenvolver habilidades de responsividade, utilização de APIs e manipulação de objetos.
+    </p>
+
+
+    <p>
+        Esse projeto foi desenvolvido com as seguintes tecnologias:
+        <ul>
+            <li>API RESTful</li>
+            <li>HTML e CSS</li>
+            <li>JavaScript</li>
+            <li>Git e Github</li>
+        </ul>
+    </p>
+
+    <p>
+        O projeto “Snap Clima” foi desenvolvido na imersão promovida pelo <a href="https://www.linkedin.com/in/brenocupertino/">Breno Cupertino</a> 
+    </p>
+
+    <br>
+    <strong style="color: #0073e6;">Habit Tracker | JavaScript</strong>
+
+    <p>
+        Desenvolvi um Habit Tracker no evento incrível promovido pela <a href="">Rocketseat</a>:  NLW - Setup Explorer.
+    </p>
+
+    <div class="buttons-project">
+        <a href="https://gabrielratao.github.io/nlw-setup/" target="_blank" class="item">Teste o projeto online</a>
+        <br>
+        <a href="https://github.com/gabrielratao/nlw-setup" target="_blank" class="item">Reposítorio GitHub</a>
+    </div>
+        
+    
+    
+    <p>
+        É um site para você facilmente registrar as atividades que você concluiu em cada dia da sua rotina! Para usar tanto no navegador do seu computador ou do celular.
+    </p>
+
+    <p>
+        Esse projeto foi desenvolvido com as seguintes tecnologias:
+        <ul>
+            <li>HTML e CSS</li>
+            <li>JavaScript</li>
+            <li>Git e Github</li>
+            <li>Figma</li>
+        </ul>
+    </p>
+
+    <br>
+    <strong style="color: #0073e6;" id="node">Projeto Prático Faculdade (Parte 2 - back end) | Node.JS e API RESTful</strong>
+
+    <p>
+        No final do segundo semestre de 2023 eu desenvolvi um projeto fullstack na minha faculdade, onde fiquei responsável pelo Banco de dados e Back - end. O projeto consiste na etapa de criação de usuário de uma aplicação futura.
+    </p>
+
+    <p>
+        Na parte do back end desenvolvi uma API RESTful através do Node.JS com diversos endpoints para realizar o CRUD do usuário.
+    </p>
+
+    <p>
+        <a href="https://github.com/gabrielratao/insight-miner" target="_blank" class="item">Repositório GitHub</a>
+    </p>
+
+    </section>
+
+    <section class="projects-description">
+        <br>
+        <br>
+        <br>
+        <h3 id="job-experience">Experiência de mercado</h3>
+        <br>
+
+
+    <strong style="color: #0073e6;"> Estágio Pessoalize - Banco de Dados e Desenvolvimento Back - End | Atual</strong>
+    <p>
+        Atualmente sou estagiário do time de BI da <a href="https://pessoalize.com/">Pessoaliz</a>e, faço parte da equipe desde abril de 2023.
+    </p>
+    <p>
+        Principais tecnologias utilizadas: Python, PostgreSQL, AWS, Cyber Duck (SFTP), GitHub e Metabase.
+    </p>
+    <p>
+        Na Pessoalize pude explorar diversas possibilidades de desenvolvimento tecnológico que agregaram valor ao negócio. Aprendi muito sobre banco de dados SQL, desenvolvimento de rotinas server side e visão analítica sobre modelo de negócio.
+    </p>
+    <br>
+
+    <strong>PRINCIPAIS ATIVIDADES SERVER SIDE</strong>
+
+    <ul>
+        <li>
+            Desenvolvimento de rotinas de ETL (Extração, Transformação e Carga de dados):
+            <ul>
+                <li>
+                    Extração: Web Scraping utilizando pacote Selenium no Python para extrair relatórios de atendimento das operações em plataformas diversas na WEB;
+                </li>
+                <li>
+                    Transformação: Aplicação das regras de negócio, limpeza dos dados inválidos, adição de dados e normalização utilizando pacotes do Python: Pandas, Numpy etc;
+                </li>
+                <li>
+                    Carga: População do banco de dados PostgreSQL através do Python utilizando pacotes como SQLAlchemy e Pandas.
+                </li>
+            </ul>
+        </li>
+        <p>
+            Todas as rotinas ETL foram adicionadas em máquinas virtuais AWS com sistema operacional Windows e Linux.
+        </p>
+        <p>
+            Para cada etapa do processo eram desenvolvidos scripts separados para manter as boas práticas de organização e facilidade de manutenção, bem como aplicar os métodos de versionamento através do GitHub. 
+        </p>
+        <p>
+            Nas rotinas desenvolvidas foram criadas documentações para demonstrar seu objetivo e o funcionamento de cada etapa dos projetos.
+        </p>
+        <p>
+            Para o desenvolvimento dessas rotinas utilizava-se criação de ambientes virtuais,  utilização de processos SFTP através de ligação do Python com Cyber Duck, Visual Studio Code e GitHub. Além disso, utilizava-se API do slack nos scripts para informar ao time eventuais problemas que poderiam ocorrer nos códigos.
+        </p>
+        <li>
+            Manutenção e monitoramento de rotinas já existentes:
+            <ul>
+                <li>Responsável por corrigir erros em rotinas de  automatização e identificar e aplicar melhorias de desempenho como rapidez e performance de hardware.</li>
+            </ul>
+        </li>
+        <li>
+            Automatização de processos
+            <ul>
+                <li>Automatização do preenchimento de relatórios Excel utilizando Python e Banco de Dados;</li>
+                <li>Captação de relatórios em plataformas WEB e envio ao time utilizando Selenium através do Python.</li>
+            </ul>
+        </li>
+    </ul>
+    <br>
+
+    <strong>PRINCIPAIS ATIVIDADES BANCO DE DADOS | PostgreSQL</strong>
+
+    <ul>
+        <li>
+            Desenvolvimento e melhoria de Dashboards a partir de consultas SQL;
+        </li>
+        <li>
+            Criação de consultas SQL para relatórios de desempenho das operações, com diversas junções de tabelas distintas e com regras de negócio;
+        </li>
+        <li>
+            Validação de dados de relatórios através de consultas no banco de dados.
+        </li>
+    </ul>
+
+    <br>
+
+    <strong style="color: #0073e6;">Laboratório de Controle e Qualidade do Ar ( LCQAr - UFSC ) | 2021 - 2022</strong>
+
+    <p>
+        Principais tecnologias utilizadas: C/C++, Python, GitHub e GitLab e WordPress.
+    </p>
+    <p>
+        No LCQAr iniciei minhas habilidades de desenvolvimento, atuei em dois grandes projetos:
+        <ul>
+            <li>Medição da Qualidade do Ar de Baixo Custo;</li>
+            <li>Poluição Atmosférica na Água da Chuva.</li>
+        </ul>
+    </p>
+    <p>
+        Em ambos projetos eu auxiliava no desenvolvimento do software e do hardware dos equipamentos utilizando C/C++ e  Python para análise de dados.
+    </p>
+
+    <strong>Artigos Científico</strong>
+    <p>
+        No projeto de Medição da Qualiade do Ar de Baixo Custo, desenvolvemos um <a href="https://www.sciencedirect.com/science/article/abs/pii/S1364815223000506">Artigo Científco</a>  publicado na Revista <a href="https://www.sciencedirect.com/journal/environmental-modelling-and-software">Environmental Modelling & Software</a> 
+    </p>
+
+    <strong>Um pouco mais sobre os projetos no LCQAr:</strong>
+
+    <p>
+        No projeto de Medição da Qualidade do Ar, a minha atuação, além do auxílio no desenvolvimento do software e hardware, foi na Coleta e Análise dos Dados da qualidade do ar obtidos, elaboração de Guias e Tutoriais sobre como utilizar nosso equipamento, através de uma página da WEB em WordPress, e Instalação e Manutenção dos materiais em campo.
+    </p>
+
+    <p>
+        No segundo projeto, a minha atuação foi no desenvolvimento do Hardware e Software de um protótipo para captação da água da chuva, o qual utilizava um Arduino para controlar um StepMotor, bem como um sensor de Temperatura e Umidade e o Armazenamento dos dados por um Cartão SD.
+    </p>
+
+    <p>
+        Em ambos os projetos meu ambiente de desenvolvimento utilizava o Visual Studio Code com a extensão PlatformIO e também Git, GitHub e GitLab para armazenamento de códigos e desenvolvimento em equipe.
+    </p>
+    <br>
+    <strong style="color: #0073e6;">Desenvolvedor WordPress | 2021</strong>
+
+    <p>
+        Freelance de desenvolvimento do WEB Site da empresa LM - Aço Inox em WordPress. A empresa necessitava de um site simples de fácil acesso aos produtos, contatos e sobre sua história no mercado.
+    </p>
+
+    <a href="https://lmacoinox.com/" target="_blank" class="item">Acesse o projeto online</a>
+
+    <br>  
+    <br>  
+    <strong style="color: #0073e6;">Empresa Júnior de Eng Sanitária e Ambiental ( EJESAM - UFSC ) | 2019</strong>
+    <br>
+    <br>
+    <strong>Presidente | 2019.2</strong>
+
+    <p>
+        Como presidente tive grandes desafios para cumprir. Minha empresa júnior ainda era um pouco imatura e eu deseja muito um grande sucesso coletivo. E conseguimos. Ganhamos diversos prêmios de Empresa Júnior com destaque Nacional, pelos grandes resultados de faturamento obtidos e por projetos que atingiram os índices dos Objetivos de Desenvolvimento Sustentável da ONU.
+    </p>
+
+    <p>
+        Além disso, minhas funções também eram sobre: Definição e acompanhamento dos indicadores e metas da empresa, formação de liderança, parcerias e conselheiro da <a href="https://www.linkedin.com/company/afejesc/?originalSubdomain=br"> FEJESC</a>.
+    </p>
+
+    <strong>Diretor de Vendas, Marketing e Projetos | 2019.1</strong>
+
+    <p>
+        No primeiro semestre de 2019 eu assumi como diretor de todas as áreas do comercial e projetos. Provavelmente tenha sido o maior desafio do ano, visto que no semestre anterior eu era trainee da empresa e calouro da UFSC. Tudo era muito novo pra mim, mas com muitos erros e resiliência consegui, juntamente com meu time, atingir números nunca alcançados pela empresa antes.
+    </p>
+
+    <p>
+        Minhas funções neste cargo eram: Garantir o crescimento sustentável da empresa, projetos de qualidade e estruturar a área de marketing. Mandato finalizado com 3x vezes o faturamento do ano anterior.
+    </p>
+
+    <h2 id="about-me">Sobre mim</h2>
+    <p>
+        Sou um jovem que ama tecnologia, e fico cada vez mais fascinado com o potencial que ela tem de facilitar e melhorar a vida das pessoas.
+    </p>
+
+    <p>
+        Gosto muito de aprender novas tecnologias, tenho domínio de Python e estou me aprofundando nos estudos de desenvolvimento Back End utilizando Python, JavaScript (Node.js) e banco de dados relacional (Estágio: PostgreSQL Faculdade: SQL Server)
+    </p>
+
+    <p>
+        Recentemente troquei de faculdade, fui da Engenharia Sanitária e Ambiental (UFSC) para o curso de Análise e Desenvolvimento de Sistemas (CESUSC). Quando comecei a estudar programação em 2020 no Python, percebi uma nova paixão minha: Desenvolver sistemas. A possibilidade de poder criar coisas incríveis no meu computador ressignificou a minha vida. Desde então busquei conhecimento por conta própria e quero me desenvolver ainda mais!
+    </p>
+
+    <p>
+        Nasci na cidade de São Paulo, e moro em Florianópolis desde antes de completar 1 ano de idade.
+    </p>
+
+    <p>
+        Atualmente quero muito participar de um time de desenvolvimento e poder contribuir com as habilidades que já tenho e aprender muito mais!
+    </p>
+
+    <h2 id="contact">Contato</h2>
+
+    <ul>
+        <li>Email: gabiratao28@gmail.com</li>
+    </ul>
+
+    <div class="buttons-project">
+        <a href="https://www.linkedin.com/in/gabriel-rat%C3%A3o-33aaa41b1/" class="item">Linkedin</a>
+        <br>
+        <a href="https://github.com/gabrielratao" class="item">Github</a>
+    </div>
+    
+
+    </section>
+
+
+    
+    <br>
+    <br>
+    <br>
+
+
+    <footer>
+        <span>Todo esse site portifolio foi desenvolvido por mim, utilizando apenas HTML, CSS e Javascript puro.</span>
+        
+    </footer>
+    
+    
 </body>
 </html>

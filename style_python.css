@@ -16,7 +16,7 @@
 
 header{
     height: 30vh;
-    background: linear-gradient(rgb(107, 6, 6), #121214);
+    background: linear-gradient(#0073e6, #121214);
     
     display: flex;
     flex-direction: column;
@@ -46,7 +46,7 @@ header{
     margin-left: 2vw;
     
 
-    background-color: rgb(107, 6, 6);
+    background-color: #0073e6;
     border: 1px solid black;
     border-radius: 10px;
 
@@ -242,7 +242,7 @@ section{
 }
 
 .end-page{
-    background: linear-gradient(rgb(107, 6, 6), #121214);
+    background: linear-gradient(#0073e6, #121214);
     height: 20vh;
     
     grid-area: end-page;
@@ -262,7 +262,7 @@ section{
     justify-content: center;
     align-items: center;
 
-    background-color: rgb(107, 6, 6);
+    background-color: #0073e6;
     border: 1px solid black;
     border-radius: 10px;
 
